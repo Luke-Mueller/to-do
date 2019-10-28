@@ -1,0 +1,23 @@
+body {
+  background-image: linear-gradient(rgb(200, 255, 220), rgb(245, 245, 220));
+  height: 94vh;
+  width: 100vw;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+/*.fade-exit {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*.fade-exit-active {*/
+/*  opacity: 0;*/
+/*  transition: opacity 300ms ease-in;*/
+/*}*/

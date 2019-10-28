@@ -1,0 +1,47 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body, div, button, ul, li, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 1;
+    border-radius: 0;
+    outline: none;
+    color: inherit;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input, select, progress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+svg {
+    width: 1.9em;
+    height: 1.9em;
+    fill: currentColor;
+}
+
+ul {
+    width: 510px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}

@@ -1,0 +1,46 @@
+.FormContainer {
+    width: 510px;
+    padding: 5px;
+    margin: 3% auto 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FormInput {
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #b4b4b4;
+    border-radius: 4px;
+}
+
+.FormBtn {
+    height: 50px;
+    width: 100px;
+    color: #909090;
+    background-color: white;
+    font-size: 18px;
+    border: 2px solid #b4b4b4;
+    border-radius: 4px;
+}
+
+.FormBtn:hover {
+    background-color: rgb(179, 176, 147);
+    color: white;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #909090;
+}
+:-moz-placeholder {
+    color: #909090;
+}
+::-moz-placeholder {
+    color: #909090;
+}
+:-ms-input-placeholder {
+    color: #909090;
+}
