@@ -23,7 +23,7 @@ button {
     background-color: transparent;
 }
 
-input, select, progress{
+input, progress{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

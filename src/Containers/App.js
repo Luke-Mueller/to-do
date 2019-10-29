@@ -20,13 +20,18 @@ class App extends Component {
   }
 
   addTaskHandler = (e) => {
-    if (e.target.firstChild.value !== '') {
+    
+    if (e.target.firstChild.value !== '' && e.target.firstChild.nextSibling.value !== '') {
       const input = e.target.firstChild.value;
+      const priority = e.target.firstChild.nextSibling.value;
 
       this.setState(prevState => {
         return {
-          taskList: prevState.taskList.concat(input)
-        }});
+          taskList: prevState.taskList.concat({input: input, priority: priority})
+        }
+      });
+
+          
 
       // Local Storage
       let tasks;
