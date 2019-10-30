@@ -16,22 +16,30 @@ class App extends Component {
       localStorage.setItem('tasks', JSON.stringify([]));
     }
     tasks = JSON.parse(localStorage.getItem('tasks'));
+    
     this.setState({taskList: tasks})
   }
 
   addTaskHandler = (e) => {
-    
-    if (e.target.firstChild.value !== '' && e.target.firstChild.nextSibling.value !== '') {
+    if(e.target.firstChild.value === '' && e.target.firstChild.nextSibling.value === '') {
+      alert('Please add a task and priority level')
+    } else if(e.target.firstChild.value === '' || e.target.firstChild.nextSibling.value === '') {
+      alert('Please add a task and priority level')
+    }
+
+    if(e.target.firstChild.value !== '' && e.target.firstChild.nextSibling.value !== '') {
       const input = e.target.firstChild.value;
       const priority = e.target.firstChild.nextSibling.value;
+      const task = {
+        input: input, 
+        priority: priority
+      }
 
       this.setState(prevState => {
         return {
-          taskList: prevState.taskList.concat({input: input, priority: priority})
+          taskList: prevState.taskList.concat(task)
         }
       });
-
-          
 
       // Local Storage
       let tasks;
@@ -40,7 +48,7 @@ class App extends Component {
       } else {
         tasks = JSON.parse(localStorage.getItem('tasks'));
       }
-      tasks.push(input);
+      tasks.push(task);
 
       localStorage.setItem('tasks', JSON.stringify(tasks));
 

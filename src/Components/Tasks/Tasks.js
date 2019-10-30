@@ -8,9 +8,9 @@ class Tasks extends Component {
 
     const tasks = this.props.taskList.map((task, i) => {
       let style;
-      if(task.priority === 'high') style = { backgroundColor: 'rgb(255, 192, 203)' };
-      if(task.priority === 'medium') style = { backgroundColor: 'rgb(252, 252, 167)' };
-      if(task.priority === 'low') style = { backgroundColor: 'rgb(209, 253, 121)' };
+      if(task.priority === 'high') style = { backgroundColor: 'rgb(255, 158, 158)' };
+      if(task.priority === 'medium') style = { backgroundColor: 'rgb(255, 253, 158)' };
+      if(task.priority === 'low') style = { backgroundColor: 'rgb(177, 255, 158)' };
 
       return (
           <div key={i} style={style} className={classes.TaskDiv}>
