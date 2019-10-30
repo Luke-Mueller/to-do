@@ -1,6 +1,7 @@
 .TaskDiv {
     width: 100%;
-    background-color: rgb(255, 253, 158);
+    /* background-color: rgb(255, 255, 83); */
+    border: 1px solid gainsboro;
     border-radius: 4px;
     box-sizing: border-box;
     display: flex;
@@ -8,9 +9,15 @@
     align-items: center;
 }
 
+.TaskUl {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
 .TaskLi {
     height: 25px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 6px;
     margin: 10px;
 }
@@ -21,4 +28,10 @@
     background-image: url("../../Assets/SVGs/remove.svg");
     padding: 10px;
     margin-right: 20px;
+}
+
+@media (min-width: 800px) {
+    .TaskUl {
+        width: 560px;
+    }
 }

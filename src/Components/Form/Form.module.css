@@ -1,5 +1,5 @@
 .FormContainer {
-    /* width: 510px; */
+    width: 70%;
     padding: 5px;
     margin: 3% auto 2%;
     display: flex;
@@ -9,9 +9,9 @@
 
 .FormInput {
     height: 40px;
-    width: 400px;
+    width: 100%;
     font-size: 18px;
-    padding: 10px;
+    padding: 16px;
     border: 2px solid #b4b4b4;
     border-radius: 4px;
 }
@@ -29,7 +29,7 @@
 
 .FormBtn {
     height: 40px;
-    /* width: 120px; */
+    width: 120px;
     color: #909090;
     background-color: white;
     font-size: 15px;
@@ -39,9 +39,15 @@
 }
 
 .FormBtn:hover {
-    background-color: rgb(179, 176, 147);
+    background-color: red;
     color: white;
     border: 2px solid transparent;
+}
+
+@media (min-width: 800px) {
+    .FormContainer {
+        width: 560px;
+    }
 }
 
 ::-webkit-input-placeholder {
